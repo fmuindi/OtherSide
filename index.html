@@ -5,115 +5,313 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Other Side Ministry</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <meta name="description" content="The Other Side Ministry helps individuals recover from addiction and transform their lives through counseling, empowerment, and training.">
+
 </head>
 <body class="font-sans text-gray-800">
 
   <!-- Navigation Bar -->
-  <header class="bg-white shadow sticky top-0 z-50">
+  <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50 transition-colors duration-300">
     <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <a href="index.html" class="text-2xl font-bold text-blue-600">The Other Side Ministry</a>
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-bold text-white">The Other Side Ministry</a>
+  
+      <!-- Navigation Menu -->
       <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-        <li><a href="about.html" class="hover:text-blue-600">About Us</a></li>
-        <li><a href="programs.html" class="hover:text-blue-600">Programs</a></li>
-        <li><a href="stories.html" class="hover:text-blue-600">Stories of Hope</a></li>
-        <li><a href="#get-involved" class="hover:text-blue-600">Get Involved</a></li>
-        <li><a href="contact.html" class="hover:text-blue-600">Contact Us</a></li>
-        <li><a href="#donate" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Donate Now</a></li>
+        <li><a href="#home" class="hover:text-blue-200 active:text-green-400 transition-colors duration-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-200 active:text-green-400 transition-colors duration-300">About Us</a></li>
+        <li><a href="programs.html" class="hover:text-blue-200 active:text-green-400 transition-colors duration-300">Programs</a></li>
+        <li><a href="stories.html" class="hover:text-blue-200 active:text-green-400 transition-colors duration-300">Stories of Hope</a></li>
+        <li><a href="#get-involved" class="hover:text-blue-200 active:text-green-400 transition-colors duration-300">Get Involved</a></li>
+        <li><a href="contact.html" class="hover:text-blue-200 active:text-green-400 transition-colors duration-300">Contact Us</a></li>
+        
+        <!-- Donate Button -->
+        <li>
+          <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded hover:bg-green-700 border-2 border-white-800 transition-colors duration-300">
+            Donate Now
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
+  
+  
 
-  <!-- Hero Section -->
-  <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/pic.enhanced.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-6">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Restoring Hope, Transforming Lives</h1>
+<!-- Hero Section -->
+<section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/pic.enhanced.png');">
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-6">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Restoring Hope, Transforming Lives</h1>
       <p class="text-lg md:text-xl mb-6">Together, we can help those impacted by alcohol addiction rebuild their lives.</p>
       <div class="flex space-x-4">
         <a href="about.html" class="bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-200">Learn More</a>
-        <a href="#donate" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Donate Now</a>
+        <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded hover:bg-blue-700">Donate Now</a>
+      </div>
+  </div>
+  <style>
+    .flex a{
+    position: relative;
+    z-index: 1;
+}
+
+  </style>
+  <!-- Curvy Bottom SVG -->
+  <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#ffffff" fill-opacity="1" d="M0,320C180,280,360,240,540,240C720,240,900,280,1080,240C1260,200,1440,160,1440,160L1440,320L0,320Z"></path>
+  </svg>
+</section>
+
+<!-- Cards Section -->
+<div id="cards-section" class="flex flex-wrap justify-center gap-6 mt-[-40px] z-10 relative">
+  <!-- Rescue Addicts Card -->
+  <div class="bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center p-4 rounded-lg shadow-lg w-80 border border-blue-300 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="material-icons text-4xl text-white mr-4">volunteer_activism</span>
+    <div>
+      <a class="font-semibold text-lg">Rescue Addicts</a>
+    </div>
+  </div>
+
+  <!-- Counseling and Deliverance Card -->
+  <div class="bg-gradient-to-br from-green-500 to-green-700 text-white flex items-center p-4 rounded-lg shadow-lg w-80 border border-green-300 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="material-icons text-4xl text-white mr-4">psychology</span>
+    <div>
+      <a class="font-semibold text-lg">Counseling & Deliverance</a>
+    </div>
+  </div>
+
+  <!-- Training and Empowerment Card -->
+  <div class="bg-gradient-to-br from-purple-500 to-purple-700 text-white flex items-center p-4 rounded-lg shadow-lg w-80 border border-purple-300 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="material-icons text-4xl text-white mr-4">school</span>
+    <div>
+      <a class="font-semibold text-lg">Training & Empowerment</a>
+    </div>
+  </div>
+</div>
+
+<!-- Addiction and Despair Section -->
+<!-- Addiction and Despair Section with Slideshow -->
+<section id="addiction-despair" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">
+      Addiction and Despair: Hope Feels Out of Reach
+    </h2>
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6"> <!-- Increased gap for better spacing -->
+      <!-- Slideshow -->
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-full sm:w-3/4 lg:w-4/5 relative overflow-hidden rounded-lg shadow-lg">
+          <div class="slideshow-container relative w-full h-[400px]">
+            <img src="./assets/Add1.jpg" alt="Image 1" class="slideshow-image w-full h-full object-cover transition-opacity duration-1000 opacity-100 absolute top-0 left-0">
+            <img src="./assets/Add2.jpg" alt="Image 2" class="slideshow-image w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute top-0 left-0">
+            <img src="./assets/Add3.jpg" alt="Image 3" class="slideshow-image w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute top-0 left-0">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+          The relentless cycles of addiction, trauma, and despair can trap individuals in isolation and hopelessness, leaving them feeling invisible and lost.
+          Traditional support systems often miss the mark, failing to address the deep spiritual, emotional, and psychological needs essential for genuine recovery and healing.
+          <br/><br/>We are dedicated to empowering individuals to reclaim their lives, rediscover their self-worth, and find healing within a faith-based supportive community. We understand that recovery goes beyond overcoming addiction or trauma—it’s about restoring hope, rebuilding lives, and walking hand in hand with each person on their journey to the other side of their struggles.
+        </p>
+
+        <!-- Buttons below the content -->
+        <div class="flex justify-center md:justify-start gap-6">
+          <a href="programs.html" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+            Our Programs
+          </a>
+          <a href="#donate" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors duration-300 border-2 border-green-800">
+            Donate Now
+          </a>
+        </div>
       </div>
     </div>
-    <!-- Curvy Bottom -->
-    <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,186.7C384,171,480,149,576,138.7C672,128,768,128,864,154.7C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    </svg>
-  </section>
-  <!-- Introduction Section -->
-  <section id="introduction" class="py-16 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Mission</h2>
-      <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+  </div>
+
+  <!-- Slideshow Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".slideshow-image");
+      let currentImageIndex = 0;
+
+      setInterval(() => {
+        images[currentImageIndex].classList.remove("opacity-100");
+        images[currentImageIndex].classList.add("opacity-0");
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.remove("opacity-0");
+        images[currentImageIndex].classList.add("opacity-100");
+      }, 8000); // Change image every 8 seconds
+    });
+  </script>
+</section>
+
+
+  <!-- Mission Section -->
+  <section id="introduction" class="relative py-20 bg-blue-600 text-white">
+    <!-- Curvy Top -->
+    <div class="absolute top-0 w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,320C180,280,360,240,540,240C720,240,900,280,1080,240C1260,200,1440,160,1440,160L1440,0L0,0Z"></path>
+      </svg>
+    </div>
+  
+    <!-- Content Container -->
+    <div class="relative container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-blue-600 mb-6">Our Mission</h2>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
         The Other Side Ministry’s mission is simple yet profound. We share Christ's love by ensuring addicts live a positive life that fulfills their potential. They envision a world where those battling addiction could break free from the chains of despair and reclaim their God-given purpose.
       </p>
     </div>
   </section>
+  
+  
 
 
   <!-- Programs Section -->
-  <section id="programs" class="py-16 bg-white">
+  <section id="programs" class="py-16 bg-gray-50">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Our Programs</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-gray-100 p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Recovery Workshops</h3>
-          <p>Comprehensive workshops designed to help individuals overcome addiction.</p>
+      <h2 class="text-4xl font-bold mb-12 text-gray-800">
+        A Comprehensive Strategy for Tackling Addiction
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-blue-500 mb-4">
+            <span class="material-icons text-6xl">school</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Recovery Workshops</h3>
+          <p class="text-gray-600 mb-4">
+            Comprehensive workshops designed to help individuals overcome addiction.
+          </p>
+          <button class="px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">
+            Learn More
+          </button>
         </div>
-        <div class="bg-gray-100 p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Counseling Services</h3>
-          <p>One-on-one and group therapy sessions to provide emotional support.</p>
+        
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-green-500 mb-4">
+            <span class="material-icons text-6xl">psychology</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Counseling Services</h3>
+          <p class="text-gray-600 mb-4">
+            One-on-one and group therapy sessions to provide emotional support.
+          </p>
+          <button class="px-4 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-600">
+            Learn More
+          </button>
         </div>
-        <div class="bg-gray-100 p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Family Support Programs</h3>
-          <p>Assisting families in rebuilding relationships and creating healthy environments.</p>
+        
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-yellow-500 mb-4">
+            <span class="material-icons text-6xl">group</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Family Support Programs</h3>
+          <p class="text-gray-600 mb-4">
+            Assisting families in rebuilding relationships and creating healthy environments.
+          </p>
+          <button class="px-4 py-2 bg-yellow-500 text-white font-semibold rounded hover:bg-yellow-600">
+            Learn More
+          </button>
         </div>
-        <div class="bg-gray-100 p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Skills & Job Training</h3>
-          <p>Providing vocational training to help individuals achieve financial independence.</p>
+        
+        <!-- Card 4 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+          <div class="text-red-500 mb-4">
+            <span class="material-icons text-6xl">work</span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Skills & Job Training</h3>
+          <p class="text-gray-600 mb-4">
+            Providing vocational training to help individuals achieve financial independence.
+          </p>
+          <button class="px-4 py-2 bg-red-500 text-white font-semibold rounded hover:bg-red-600">
+            Learn More
+          </button>
         </div>
+        
       </div>
     </div>
   </section>
+  
 <!-- Key Statistics Section -->
-<section id="statistics" class="py-16 bg-gray-50">
+<section id="statistics" class="py-16 bg-gradient-to-b from-blue-50 to-blue-100">
   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">Our Impact</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 shadow-md rounded">
-        <h3 class="text-4xl font-bold text-blue-600">2,000+</h3>
-        <p>Lives Transformed</p>
+    <h2 class="text-4xl font-bold text-gray-800 mb-12">Our Impact</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-8 transform hover:-translate-y-2 transition-all duration-300">
+        <div class="text-blue-500 mb-4">
+          <span class="material-icons text-6xl">people</span>
+        </div>
+        <h3 class="text-5xl font-extrabold text-blue-600 mb-2">2,000+</h3>
+        <p class="text-gray-700 text-lg">Lives Transformed</p>
       </div>
-      <div class="bg-white p-6 shadow-md rounded">
-        <h3 class="text-4xl font-bold text-blue-600">500+</h3>
-        <p>Families Reunited</p>
+      
+      <!-- Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-8 transform hover:-translate-y-2 transition-all duration-300">
+        <div class="text-green-500 mb-4">
+          <span class="material-icons text-6xl">home</span>
+        </div>
+        <h3 class="text-5xl font-extrabold text-green-600 mb-2">500+</h3>
+        <p class="text-gray-700 text-lg">Families Reunited</p>
       </div>
-      <div class="bg-white p-6 shadow-md rounded">
-        <h3 class="text-4xl font-bold text-blue-600">10,000+</h3>
-        <p>Counseling Sessions Held</p>
+      
+      <!-- Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-8 transform hover:-translate-y-2 transition-all duration-300">
+        <div class="text-yellow-500 mb-4">
+          <span class="material-icons text-6xl">support_agent</span>
+        </div>
+        <h3 class="text-5xl font-extrabold text-yellow-600 mb-2">10,000+</h3>
+        <p class="text-gray-700 text-lg">Counseling Sessions Held</p>
       </div>
+      
     </div>
   </div>
 </section>
 
+
   <!-- Stories of Hope Section -->
-  <section id="stories" class="py-16 bg-gray-50">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Stories of Hope</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Patrick's Journey to Recovery</h3>
-          <p>Discover how Patrick overcame addiction and rebuilt his life with the help of our programs.</p>
-          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+  <section id="stories" class="relative py-20">
+    <!-- Background Design -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-100"></div>
+    <div class="absolute inset-0 bg-pattern opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png');"></div>
+  
+    <!-- Content Container -->
+    <div class="relative container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">Stories of Hope</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-white p-8 shadow-lg rounded-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          <div class="mb-4">
+            <img src="./assets/Add1.jpg" alt="Patrick's Journey" class="w-full h-48 object-cover rounded">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Patrick's Journey to Recovery</h3>
+          <p class="text-gray-600 mb-6">Discover how Patrick overcame addiction and rebuilt his life with the help of our programs.</p>
+          <a href="#" class="inline-block text-white bg-blue-600 px-6 py-2 rounded hover:bg-blue-700 transition">Read More</a>
         </div>
-        <div class="bg-white p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Mary's Family Reunited</h3>
-          <p>Learn how Mary’s family found healing and hope through our support programs.</p>
-          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+        
+        <!-- Card 2 -->
+        <div class="bg-white p-8 shadow-lg rounded-lg transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          <div class="mb-4">
+            <img src="./assets/Add2.jpg" alt="Mary's Family Reunited" class="w-full h-48 object-cover rounded">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mary's Family Reunited</h3>
+          <p class="text-gray-600 mb-6">Learn how Mary’s family found healing and hope through our support programs.</p>
+          <a href="#" class="inline-block text-white bg-purple-600 px-6 py-2 rounded hover:bg-purple-700 transition">Read More</a>
         </div>
+        
       </div>
     </div>
   </section>
-
+  
   <!-- Footer -->
   <footer class="bg-blue-600 text-white py-6">
     <div class="container mx-auto text-center">
