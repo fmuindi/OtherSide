@@ -38,31 +38,48 @@
       </ul>
     </nav>
   </header>
-  
-  
-
 <!-- Hero Section -->
-<section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/pic.enhanced.png');">
+<section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/hero2.png');">
   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-6">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">Restoring Hope, Transforming Lives</h1>
-      <p class="text-lg md:text-xl mb-6">Together, we can help those impacted by alcohol addiction rebuild their lives.</p>
-      <div class="flex space-x-4">
-        <a href="about.html" class="bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-200">Learn More</a>
-        <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded hover:bg-blue-700">Donate Now</a>
-      </div>
+    <p class="text-lg md:text-xl mb-6">Together, we can help those impacted by alcohol addiction rebuild their lives.</p>
+    <div class="flex space-x-4">
+      <a href="about.html" class="bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-200">Learn More</a>
+      <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded hover:bg-blue-700">Donate Now</a>
+    </div>
   </div>
   <style>
-    .flex a{
-    position: relative;
-    z-index: 1;
-}
-
+    .flex a {
+      position: relative;
+      z-index: 1;
+    }
   </style>
   <!-- Curvy Bottom SVG -->
   <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#ffffff" fill-opacity="1" d="M0,320C180,280,360,240,540,240C720,240,900,280,1080,240C1260,200,1440,160,1440,160L1440,320L0,320Z"></path>
   </svg>
 </section>
+<style>
+  #home {
+  transition: background-image 1s ease-in-out;
+}
+
+</style>
+<script>
+  // JavaScript for Background Slideshow
+  const heroSection = document.getElementById("home");
+  const images = ["./assets/hero2.png", "./assets/hero1.png", "./assets/hero3.png", "./assets/hero4.jpg"];
+  let currentImageIndex = 0;
+
+  function changeBackgroundImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    heroSection.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+  }
+
+  // Change the background image every 5 seconds
+  setInterval(changeBackgroundImage, 8000);
+</script>
+
 
 <!-- Cards Section -->
 <div id="cards-section" class="flex flex-wrap justify-center gap-6 mt-[-40px] z-10 relative">
@@ -147,7 +164,6 @@
     });
   </script>
 </section>
-
 
   <!-- Mission Section -->
   <section id="introduction" class="relative py-20 bg-blue-600 text-white">
