@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the story, mission, and programs of The Other Side Ministry, a faith-based organization transforming lives impacted by addiction.">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta name="keywords" content="The Other Side Ministry, addiction recovery, faith-based programs, counseling, skills training, outreach">
   <title>About Us | The Other Side Ministry</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,38 +16,55 @@
     <nav class="container mx-auto flex justify-between items-center py-4 px-6">
       <a href="index.html" class="text-2xl font-bold text-blue-600">The Other Side Ministry</a>
       <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-        <li><a href="about.html" class="hover:text-blue-600">About Us</a></li>
-        <li><a href="programs.html" class="hover:text-blue-600">Programs</a></li>
-        <li><a href="stories.html" class="hover:text-blue-600">Stories of Hope</a></li>
-        <li><a href="#get-involved" class="hover:text-blue-600">Get Involved</a></li>
-        <li><a href="contact.html" class="hover:text-blue-600">Contact Us</a></li>
-        <li><a href="#donate" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Donate Now</a></li>
+        <li><a href="index.html#home" class="hover:text-blue-200 transition-colors">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-200 transition-colors">About Us</a></li>
+        <li><a href="programs.html" class="hover:text-blue-200 transition-colors">Programs</a></li>
+        <li><a href="stories.html" class="hover:text-blue-200 transition-colors">Stories of Hope</a></li>
+        <li><a href="get-involved.html" class="hover:text-blue-200 transition-colors">Get Involved</a></li>
+        <li><a href="contact.html" class="hover:text-blue-200 transition-colors">Contact Us</a></li>
+        <li>
+          <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded">
+            Donate Now
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative bg-blue-600 bg-opacity-90 text-white h-72 flex justify-center items-center text-center">
-    <div>
-      <h1 class="text-4xl md:text-6xl font-bold">About Us</h1>
-      <p class="text-lg md:text-xl mt-4">Learn more about our story, mission, and programs.</p>
+  <section class="relative bg-blue-600 text-white h-96 flex justify-center items-center text-center bg-cover" style="background-image: url('./assets/hero4.jpg');" aria-label="Community gathering">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <!-- Content -->
+    <div class="relative z-10">
+      <h1 class="text-5xl md:text-6xl font-bold">About Us</h1>
+      <p class="text-lg md:text-xl mt-4">Discover our story, mission, and transformative programs.</p>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="story" class="py-16 bg-gray-50">
     <div class="container mx-auto text-center md:text-left px-6">
-      <h2 class="text-3xl font-bold text-blue-600 mb-6">The Story of The Otherside Ministry</h2>
-      <p class="mb-4">
-        Founded in 2023, The Otherside Ministry emerged from a heartfelt mission to restore hope and transform lives devastated by alcohol addiction. It was established by Pastor Millicent Allan, her husband Rev. Easter Allan, and their close friend Susan Connelly in the United States. Together, this small yet determined group, rooted in unwavering faith and a profound love for Christ, sought to address the addiction crisis gripping the Mathare Valley community in Nairobi, Kenya.
-      </p>
-      <p class="mb-4">
-        They believed that no life is too broken to be redeemed, and through God’s grace, dedicated care, and the support of an international community, transformation is possible.
-      </p>
-      <p>
-        The ministry’s foundation rests on core values that guide every effort: dependency on God, servanthood, teamwork, empowerment, community development, recovery, and hope.
-      </p>
+      <div class="md:flex md:items-center">
+        <div class="md:w-1/2">
+          <img src="assets/background2.jpg" alt="Our Mission" class="rounded-lg shadow-md mb-6 md:mb-0">
+        </div>
+        <div class="md:w-1/2 md:pl-10">
+          <h2 class="text-3xl font-bold text-blue-600 mb-6">The Story of The Other Side Ministry</h2>
+          <p class="mb-4">
+            Founded in 2023, The Other Side Ministry emerged from a heartfelt mission to restore hope and transform lives devastated by alcohol addiction. It was established by Pastor Millicent Allan, her husband Rev. Allan, and their close friend Susan Connelly in the United States.
+          </p>
+          <h3 class="text-xl font-semibold text-blue-600 mb-4">Our Mission</h3>
+          <p class="mb-4">
+            Driven by faith and compassion, the ministry seeks to provide care, guidance, and long-term support for individuals struggling with addiction. It focuses on holistic recovery, addressing the body, mind, and spirit.
+          </p>
+          <h3 class="text-xl font-semibold text-blue-600 mb-4">Stories of Transformation</h3>
+          <p class="mb-4">
+            Lives have been changed profoundly through this ministry. Susan Connelly, a recovered individual and co-founder, exemplifies the possibility of change, while Millicent Allan leads the organization with a heart for service.
+          </p>
+          <a href="programs.html" class="text-blue-600 font-semibold hover:underline">Learn More About Our Mission</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -52,38 +72,144 @@
   <section id="programs" class="py-16 bg-white">
     <div class="container mx-auto text-center px-6">
       <h2 class="text-3xl font-bold text-blue-600 mb-8">Holistic Programs to Transform Lives</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-100 p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Counseling and Spiritual Guidance</h3>
-          <p class="mb-4">
-            Through the expertise of certified counselors and compassionate pastors, individuals receive both one-on-one and group therapy. Rev. Easter Allan plays a pivotal role in helping participants confront the root causes of their addiction, all while rediscovering their identity in Christ. The ministry’s spiritual guidance serves as a cornerstone for emotional healing and renewed purpose.
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-gray-100 p-6 shadow-md rounded hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <span class="text-blue-600 text-3xl mr-4">&#x1F4AC;</span>
+            <h3 class="text-xl font-bold">Counseling and Spiritual Guidance</h3>
+          </div>
+          <p>
+            Certified counselors and compassionate pastors provide therapy to address the root causes of addiction while helping individuals rediscover their identity in Christ.
           </p>
         </div>
-        <div class="bg-gray-100 p-6 shadow-md rounded">
-          <h3 class="text-xl font-bold mb-2">Skills Training and Empowerment</h3>
-          <p class="mb-4">
-            Recovery doesn’t end with healing—it thrives with empowerment. Recognizing the importance of economic independence, the ministry offers vocational training to equip individuals with valuable skills.
-          </p>
+        <div class="bg-gray-100 p-6 shadow-md rounded hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <span class="text-blue-600 text-3xl mr-4">&#x1F528;</span>
+            <h3 class="text-xl font-bold">Skills Training and Empowerment</h3>
+          </div>
           <p>
-            In early 2024, the ministry proudly launched its vocational training college, providing programs such as tailoring. By combining rehabilitation with skill-building, participants are empowered to rebuild their lives with dignity and self-sufficiency.
+            Vocational training programs, such as tailoring, empower individuals with self-sufficiency and practical skills for a brighter future.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Closing Section -->
-  <section class="py-16 bg-blue-600 text-white">
+  <!-- Our Team Section -->
+<!-- Our Team Section -->
+<section id="our-team" class="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+  <div class="container mx-auto text-center px-6">
+    <h2 class="text-4xl font-extrabold text-blue-600 mb-8">Meet Our Team</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Team Member -->
+      <div class="team-card bg-white shadow-md rounded-lg p-6 hover:shadow-xl transform transition duration-300">
+        <div class="relative">
+          <img src="./assets/susan.jpg" alt="Susan Connelly" class="w-28 h-28 mx-auto rounded-full mb-4 ring-4 ring-blue-100">
+          <h3 class="text-xl font-bold text-gray-800">Susan Connelly</h3>
+          <p class="role text-blue-600 mb-4">Founder</p>
+        </div>
+        <button aria-expanded="false" class="read-bio-btn text-sm text-blue-600 hover:underline flex justify-center items-center mx-auto" onclick="toggleStory('susan-story', this)">
+          <i class="fas fa-chevron-down mr-2"></i> Read Bio
+        </button>
+        <div id="susan-story" class="bio hidden text-sm mt-4 text-gray-700 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          Susan Connelly is the visionary behind The Other Side Ministry. Her journey from addiction to leadership embodies the spirit of redemption and transformation. With a passion for helping others, she works tirelessly to inspire hope.
+        </div>
+      </div>
+
+      <!-- Team Member -->
+      <div class="team-card bg-white shadow-md rounded-lg p-6 hover:shadow-xl transform transition duration-300">
+        <div class="relative">
+          <img src="./assets/millicent-pic.jpg" alt="Pst. Millicent Allan" class="w-28 h-28 mx-auto rounded-full mb-4 ring-4 ring-blue-100">
+          <h3 class="text-xl font-bold text-gray-800">Pst. Millicent Allan</h3>
+          <p class="role text-blue-600 mb-4">CEO</p>
+        </div>
+        <button aria-expanded="false" class="read-bio-btn text-sm text-blue-600 hover:underline flex justify-center items-center mx-auto" onclick="toggleStory('millicent-story', this)">
+          <i class="fas fa-chevron-down mr-2"></i> Read Bio
+        </button>
+        <div id="millicent-story" class="bio hidden text-sm mt-4 text-gray-700 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          Pastor Millicent Allan is the driving force behind the ministry's mission. With unwavering faith and a heart for service, she leads initiatives to uplift individuals and strengthen communities.
+        </div>
+      </div>
+
+      <!-- Team Member -->
+      <div class="team-card bg-white shadow-md rounded-lg p-6 hover:shadow-xl transform transition duration-300">
+        <div class="relative">
+          <img src="./assets/Allan.jpg" alt="Rev. Easter Allan" class="w-28 h-28 mx-auto rounded-full mb-4 ring-4 ring-blue-100">
+          <h3 class="text-xl font-bold text-gray-800">Rev. Easter Allan</h3>
+          <p class="role text-blue-600 mb-4">CEO</p>
+        </div>
+        <button aria-expanded="false" class="read-bio-btn text-sm text-blue-600 hover:underline flex justify-center items-center mx-auto" onclick="toggleStory('easter-story', this)">
+          <i class="fas fa-chevron-down mr-2"></i> Read Bio
+        </button>
+        <div id="easter-story" class="bio hidden text-sm mt-4 text-gray-700 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          Reverend Easter Allan is a compassionate leader who brings wisdom and strategic vision to the ministry. His guidance ensures the organization continues to thrive and impact lives positively.
+        </div>
+      </div>
+
+      <!-- Team Member -->
+      <div class="team-card bg-white shadow-md rounded-lg p-6 hover:shadow-xl transform transition duration-300">
+        <div class="relative">
+          <img src="./assets/Ouma.jpg" alt="John Ouma" class="w-28 h-28 mx-auto rounded-full mb-4 ring-4 ring-blue-100">
+          <h3 class="text-xl font-bold text-gray-800">John Ouma</h3>
+          <p class="role text-blue-600 mb-4">Secretary & Content Coordinator</p>
+        </div>
+        <button aria-expanded="false" class="read-bio-btn text-sm text-blue-600 hover:underline flex justify-center items-center mx-auto" onclick="toggleStory('john-story', this)">
+          <i class="fas fa-chevron-down mr-2"></i> Read Bio
+        </button>
+        <div id="john-story" class="bio hidden text-sm mt-4 text-gray-700 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          John Ouma handles communications and content creation for the ministry. His dedication ensures that the ministry’s message of hope reaches and inspires people worldwide.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for Toggle Stories -->
+<script>
+  function toggleStory(id, button) {
+    const story = document.getElementById(id);
+    const isOpen = !story.classList.contains('hidden');
+    
+    // Close all stories first
+    const allStories = document.querySelectorAll('.bio');
+    allStories.forEach(story => {
+      if (story.id !== id) {  // Exclude the clicked story
+        story.classList.add('hidden');
+        story.style.maxHeight = '0';  // Collapses the story
+        story.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+        story.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+      }
+    });
+
+    // Toggle the clicked story
+    if (isOpen) {
+      story.classList.add('hidden');
+      story.style.maxHeight = '0';  // Collapses the story
+      button.querySelector('i').classList.remove('fa-chevron-up');
+      button.querySelector('i').classList.add('fa-chevron-down');
+    } else {
+      story.classList.remove('hidden');
+      story.style.maxHeight = '200px';  // Expands the story with a smooth transition
+      button.querySelector('i').classList.remove('fa-chevron-down');
+      button.querySelector('i').classList.add('fa-chevron-up');
+    }
+
+    // Smooth scroll to the bio
+    story.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+  <!-- Call to Action Section -->
+  <section class="py-16 bg-gradient-to-br from-green-500 to-green-700 text-white">
     <div class="container mx-auto text-center px-6">
-      <h2 class="text-3xl font-bold mb-4">A Community of Faith and Transformation</h2>
-      <p>
-        The journey of The Otherside Ministry is one of love, resilience, and unshakable faith. Every step is guided by the belief that through God’s grace and the power of a supportive community, lives can be transformed.
-      </p>
-      <p class="mt-4">
-        Whether it’s offering a listening ear, practical skills, or spiritual nourishment, the ministry continues to bring light to the lives of those who need it most.
-      </p>
+      <h2 class="text-3xl font-bold mb-4">Join Us in Transforming Lives</h2>
+      <p class="text-lg mb-6">Whether you want to volunteer, donate, or pray with us, your support makes a difference.</p>
+      <a href="donate.html" class="bg-white text-green-700 px-6 py-3 rounded hover:bg-gray-200">Get Involved Today</a>
     </div>
   </section>
+  
+  
 
   <!-- Footer -->
   <footer class="bg-blue-600 text-white py-6">
@@ -93,6 +219,8 @@
         <a href="#" class="hover:underline">Privacy Policy</a>
         <a href="#" class="hover:underline">Terms of Use</a>
         <a href="index.html#contact" class="hover:underline">Contact Us</a>
+        <a href="#" class="hover:underline">Facebook</a>
+        <a href="#" class="hover:underline">Twitter</a>
       </div>
     </div>
   </footer>
