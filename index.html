@@ -10,32 +10,223 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <meta name="description" content="The Other Side Ministry helps individuals recover from addiction and transform their lives through counseling, empowerment, and training.">
+  <style>
+    /* Global Styles */
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.section-title {
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 4px;
+      background-color: #38bdf8; /* Tailwind's cyan-400 */
+      border-radius: 8px;
+    }
 
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Images and Videos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Navigation Bar */
+header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.sticky {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav ul li {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+}
+
+a,
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+button:hover {
+  transform: translateY(-2px);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px; /* Larger width for better visibility */
+  height: 40px; /* Larger height for spacing */
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 100; /* Keep above other elements */
+}
+
+.hamburger div {
+  width: 100%; /* Full width of the container */
+  height: 5px; /* Slightly thinner bars */
+  background-color: #2563EB; /* Dark color for better contrast */
+  border-radius: 2px; /* Smoother edges */
+  transition: all 0.3s ease-in-out;
+  transform-origin: center; /* Smooth rotation effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth for a polished look */
+}
+
+/* Active state for the hamburger icon */
+.hamburger.active div:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+/* Hover effects for interactivity */
+.hamburger:hover div {
+  background-color: #007bff; /* Highlight color on hover */
+}
+
+/* Optional: Background for better visibility */
+.hamburger {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Subtle background to make icon more visible */
+  border-radius: 10px; /* Adds a rounded background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+
+/* Responsive Navigation */
+.nav-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color:#2563EB;
+  flex-direction: column;
+  gap: 0px;
+  padding: 1rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  display: none;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links a {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+  </style>
 </head>
 <body class="font-sans text-gray-800">
 
-  <!-- Navigation Bar -->
-  <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50 transition-colors duration-300">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <!-- Logo -->
-      <a href="index.html" class="text-2xl font-bold text-white">The Other Side Ministry</a>
-  
-      <!-- Navigation Menu -->
-      <ul class="flex space-x-6">
-        <li><a href="index.html#home" class="hover:text-blue-200 transition-colors">Home</a></li>
-        <li><a href="about.html" class="hover:text-blue-200 transition-colors">About Us</a></li>
-        <li><a href="programs.html" class="hover:text-blue-200 transition-colors">Programs</a></li>
-        <li><a href="stories.html" class="hover:text-blue-200 transition-colors">Stories of Hope</a></li>
-        <li><a href="get-involved.html" class="hover:text-blue-200 transition-colors">Get Involved</a></li>
-        <li><a href="contact.html" class="hover:text-blue-200 transition-colors">Contact Us</a></li>
-        <li>
-          <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded">
-            Donate Now
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+ <!-- Navigation Bar -->
+ <header class="bg-gradient-to-br from-blue-600 to-blue-800 text-white shadow-md sticky top-0 z-50">
+  <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+    <a href="index.html" class="text-3xl font-bold">The Other Side Ministry</a>
+    <!-- Hamburger Button -->
+    <button class="hamburger" aria-label="Toggle navigation">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <!-- Navigation Links -->
+    <ul class="nav-links hidden md:flex space-x-6">
+      <li><a href="index.html#home" class="hover:text-blue-300 transition-colors">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-300 transition-colors">About Us</a></li>
+      <li><a href="programs.html" class="hover:text-blue-300 transition-colors">Programs</a></li>
+      <li><a href="stories.html" class="hover:text-blue-300 transition-colors">Stories of Hope</a></li>
+      <li><a href="get-involved.html" class="hover:text-blue-300 transition-colors">Get Involved</a></li>
+      <li><a href="contact.html" class="hover:text-blue-300 transition-colors">Contact Us</a></li>
+      <li>
+        <a href="#donate" class="bg-gradient-to-br from-green-500 to-green-700 text-white px-6 py-3 rounded hover:shadow-lg">
+          Donate Now
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+</head>
+
 <!-- Hero Section -->
 <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/hero2.png');">
   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-6">
@@ -110,7 +301,7 @@
 <!-- Addiction and Despair Section with Slideshow -->
 <section id="addiction-despair" class="py-16 bg-gray-50">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">
+    <h2 class="text-4xl font-bold text-gray-800 mb-12 section-title text-center">
       Addiction and Despair: Hope Feels Out of Reach
     </h2>
     <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6"> <!-- Increased gap for better spacing -->
@@ -182,7 +373,7 @@
   
     <!-- Content Container -->
     <div class="relative container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold text-blue-600 mb-6">Our Mission</h2>
+      <h2 class="text-4xl font-bold text-blue-600 section-title mb-6">Our Mission</h2>
       <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
         The Other Side Ministry’s mission is simple yet profound. We share Christ's love by ensuring addicts live a positive life that fulfills their potential. They envision a world where those battling addiction could break free from the chains of despair and reclaim their God-given purpose.
       </p>
@@ -195,7 +386,7 @@
   <!-- Programs Section -->
   <section id="programs" class="py-16 bg-gray-50">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-12 text-gray-800">
+      <h2 class="text-4xl font-bold section-title mb-12 text-gray-800">
         A Comprehensive Strategy for Tackling Addiction
       </h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -263,7 +454,7 @@
 <!-- Key Statistics Section -->
 <section id="statistics" class="py-16 bg-gradient-to-b from-blue-50 to-blue-100">
   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-800 mb-12">Our Impact</h2>
+    <h2 class="text-4xl font-bold text-gray-800 section-title mb-12">Our Impact</h2>
     <div class="grid md:grid-cols-4 gap-8">
       
       <!-- Card 1 -->
@@ -336,7 +527,7 @@
   
     <!-- Content Container -->
     <div class="relative container mx-auto text-center">
-      <h2 class="text-4xl font-bold text-gray-800 mb-12">Stories of Hope</h2>
+      <h2 class="text-4xl font-bold text-gray-800 mb-12 section-title">Stories of Hope</h2>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
@@ -397,5 +588,15 @@
       </div>
     </div>
   </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('hidden');
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
