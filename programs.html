@@ -31,6 +31,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.section-title {
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 4px;
+      background-color: #38bdf8; /* Tailwind's cyan-400 */
+      border-radius: 8px;
+    }
+
 /* Images and Videos */
 img,
 video {
@@ -177,6 +192,13 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+.gallery-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
   </style>
 </head>
 <body class="font-sans text-gray-800">
@@ -219,7 +241,7 @@ button:hover {
   <!-- Programs Section -->
   <section id="programs" class="py-16 bg-gray-50">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">Explore Our Key Initiatives</h2>
+      <h2 class="text-3xl font-bold text-center section-title mb-12">Explore Our Key Initiatives</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         <!-- Recovery Workshops -->
@@ -269,7 +291,7 @@ button:hover {
   <!-- Testimonials Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12">Hear from Our Beneficiaries</h2>
+      <h2 class="text-3xl font-bold section-title mb-12">Hear from Our Beneficiaries</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-gray-100 p-6 shadow-lg rounded-lg">
           <p class="italic">"The counseling services were life-changing. I regained my confidence and reconnected with my family."</p>
@@ -283,10 +305,26 @@ button:hover {
     </div>
   </section>
 
+<!-- Gallery Section -->
+<section class="gallery-section py-8">
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0">
+    <img src="./assets/hero1.png" alt="Gallery Image 1" class="w-full h-64 object-cover">
+    <img src="./assets/hero2.png" alt="Gallery Image 2" class="w-full h-64 object-cover">
+    <img src="./assets/hero3.png" alt="Gallery Image 3" class="w-full h-64 object-cover">
+    <img src="./assets/hero4.jpg" alt="Gallery Image 4" class="w-full h-64 object-cover">
+    <img src="./assets/Sewing3.jpg" alt="Gallery Image 5" class="w-full h-64 object-cover hidden lg:block">
+    <img src="./assets/Sewing6.jpg" alt="Gallery Image 6" class="w-full h-64 object-cover hidden lg:block">
+  </div>
+</section>
+
+<!-- Add this CSS to your <style> block or external stylesheet -->
+
+
+
   <!-- Call to Action -->
   <section class="py-16 bg-gradient-to-br from-green-500 to-green-700 text-white">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Ready to Make a Difference?</h2>
+      <h2 class="text-3xl font-bold section-title mb-4">Ready to Make a Difference?</h2>
       <p class="text-lg mb-6">Join us in creating a brighter future for individuals and families affected by addiction.</p>
       <a href="#donate" class="bg-white text-green-700 px-6 py-3 rounded hover:bg-gray-200">Donate Now</a>
     </div>

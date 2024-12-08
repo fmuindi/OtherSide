@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Payment</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAs-PNpa1_CxQlA7ij9vhwgAnnNla5YDHKyGuNU1nfk8ZkgX4k55yJjshPS7qQ-mM7C4bh3Y22Nu8LIx8&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <style>
+        #paypal-container-J7GFTSFNT24NC {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Support Our Work</h1>
+    <p>Use the button below to make a secure payment:</p>
+    <div id="paypal-container-J7GFTSFNT24NC"></div>
+    <script>
+        paypal.HostedButtons({
+            hostedButtonId: "J7GFTSFNT24NC",
+        }).render("#paypal-container-J7GFTSFNT24NC");
+    </script>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAs-PNpa1_CxQlA7ij9vhwgAnnNla5YDHKyGuNU1nfk8ZkgX4k55yJjshPS7qQ-mM7C4bh3Y22Nu8LIx8&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <div id="paypal-container-J7GFTSFNT24NC"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "J7GFTSFNT24NC",
+      }).render("#paypal-container-J7GFTSFNT24NC")
+    </script>
+</body>
+</html>
